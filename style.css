@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700;800;900&family=Orbitron:wght@500;900&family=Oswald:wght@200;300;500;600&family=Shantell+Sans:ital,wght@0,500;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+}
+header h1 {
+    width: auto;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 43px;
+    margin-right: 30%;
+}
+li,a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: #B936F5;
+    text-decoration: underline;
+}
+
+.welcome-div{
+    background-color: #6096B4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text-div{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+.img-layers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.img-layers img{
+    position: absolute;
+}
+.img-layers img:nth-child(1){
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    height: 30%;
+}
+.img-layers img:nth-child(2){
+    top: 35%;
+    left: 30%;
+    width: 20%;
+    height: 30%;
+}
+.img-layers img:nth-child(3){
+    top: 15%;
+    left: 60%;
+    width: 20%;
+    height: 30%;
+}
+.text h1{
+    font-size: 250px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+}
+.description-div{
+    width: 100%;
+    height: 50vh;
+}
+.desc-text{
+    width: 40%;
+    height: 50vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    flex-wrap: nowrap;
+}
+.p1{
+    margin-top: -1px;
+    margin-left: 2%;
+    font-size: 30px;
+    opacity: 50%;
+}
+.p2{
+    margin-top: -2px;
+    margin-left: 2%;
+    font-size: 30px;
+}
+.my-profile{
+    background-color: #6096B4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.profile-text{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+}
+.my-profile-description{
+    width: 100%;
+    height: 50vh;
+    margin-left: 1%;
+}
+.my-profile-description p{
+    font-size: 50px ;
+}
+.profile-img{
+    overflow: hidden;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+.profile-img img{
+    transform: rotateY(360deg);
+    content: url(assests/card-back.svg);
+}
+.is-flipped{
+    content: url(assests/card-front.svg);
+    transform: rotateY(360deg);
+}
+.form-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #93BFCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-div{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    position: absolute;
+}
+.form-div2{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    position: absolute;
+}
+.line2, .line4{
+    position: absolute;
+    width: 30%;
+    height: 20vh;
+    right: 100px;
+    font-size: 150px;
+    white-space: nowrap;
+    z-index: 0;
+}
+.line1, .line3{
+    position: absolute;
+    width: 30%;
+    height: 20vh;
+    right: 100px;
+    font-size: 150px;
+    white-space: nowrap;
+    margin-bottom: 50%;
+    z-index: 0;
+}
+.form-img{
+    width: 50%;
+    height: 90vh;
+    background-image: url(assests/join-bg.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.form-inputs{
+    width: 50%;
+    height: 90vh;
+    background-color: #EEE9DA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-header{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+
+}
+.form-header h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+}
+.form-header h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+}
+.logos-div{
+    width: 80%;
+    height: 6vh;
+}
+.inputs-forms{
+    width: 100%;
+    height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center ;
+    gap: 5%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.input-btn{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-btn button{
+    width: 50%;
+    height: 10vh;
+    border-radius: 5px;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+}
+input{
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    height: 6vh;
+}
+.merge-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #93BFCF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.palindrome-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #BDCDD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prime-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #BDCDD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.merge-div{
+    border-radius: 10px;
+    background-color: #EEE9DA;
+    width: 72%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+.merge-div h1{
+    font-size: 80px;
+}
+.merge-div p{
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right:  10%;
+    margin-top: -5%;
+}
+.merge-div input{
+    width: 50%;
+}
+.merge-div button{
+    width: 20%;
+    height: 7vh;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    cursor: pointer;
+}
+.transition-div{
+    width: 100%;
+    height: 100vh;
+    background-color: #BDCDD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transition-text{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    pointer-events: none;
+}
+.arrow{
+    width: 30%;
+    height: 100vh;
+    pointer-events: none;
+}
+.transition-circle{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+.circle{
+    background-color: white;
+    height: 50vh;
+    width: 80%;
+    margin-top: 5%;
+    border-radius: 100%;
+}
+.mini-div{
+    width: 100%;
+    height: 100vh;
+    background-color: #93BFCF;
+    display: flex;
+}
+.mini-div1{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mini-project1{
+    background-color: #EEE9DA;
+    border-radius: 10px;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle-project1{
+    background-color: white;
+    width: 40%;
+    height: 40vh;
+    border-radius: 100%;
+    position: relative;
+}
+
+.mini-div2{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.last-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #6096B4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

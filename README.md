@@ -1,1 +1,1 @@
-# backend-weekend-trip
+# js-website-practice
